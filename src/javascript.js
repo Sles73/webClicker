@@ -43,3 +43,15 @@ function setCookie(cname, cvalue, exdays) {
     }
     return "";
   }
+
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("topbar").style.height = "250px";
+    document.getElementById("topbar").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("topbar").style.height = "0";
+    document.getElementById("topbar").style.width = "0";
+  }

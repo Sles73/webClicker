@@ -1,9 +1,9 @@
 let body = 0;
-console.log(getCookie("body"));
+console.log(getCookie("bod"));
 
-if(parseInt(parseInt(getCookie("body"))) > 0){
-    body = parseInt(getCookie("body"));
-    document.getElementById("body").innerHTML = body;
+if(parseInt(parseInt(getCookie("bod"))) > 0){
+    body = parseInt(getCookie("bod"));
+    document.getElementById("bod").innerHTML = body;
 }
 
 
@@ -13,13 +13,13 @@ console.log(body);
 function hh(){
     body += 1;
     console.log(body);
-    document.getElementById("body").innerHTML = body;
-    setCookie("body",body,5);
+    document.getElementById("bod").innerHTML = body;
+    setCookie("bod",body,5);
     console.log(body.toString());
-    console.log(getCookie("body"));
+    console.log(getCookie("bod"));
 }
 
-
+let nav = false;
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -43,6 +43,17 @@ function setCookie(cname, cvalue, exdays) {
     }
     return "";
   }
+
+  function Nav(){
+    if(nav){
+      openNav()
+    }else{
+      closeNav()
+    }
+    nav=!nav;
+  }
+
+
 
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";

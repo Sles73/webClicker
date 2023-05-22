@@ -1,8 +1,15 @@
+/*
+mobile chage widt is 510px
+*/
+
 body{
     background-color: #FAE1DF;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #menu{
+    position: absolute;
+    z-index: 2;
     background-color: #6A0136;
     color: #fae1df;
     text-align: center;
@@ -10,10 +17,12 @@ body{
     width: min-content;
     margin-left: -10px;
     margin-top: -10px;
+    font-size: 50px;
 
 }
 #topbar{
-    width: 0;
+    width: 0;    
+    left: -35px;
     height: 0;
     position: fixed;
     z-index: 1;
@@ -22,8 +31,15 @@ body{
     background-color: #6A0136;
     overflow-x: hidden;
     transition: 0.5s;
-    
 }
+
+#topbar p{
+    color: #f1f1f1;
+    margin-left: calc(20% + 250px);
+    font-size: xx-large;
+    margin-top: 70px;
+}
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -38,35 +54,42 @@ body{
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 15px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
+    margin-top: 30px;
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+    color: #818181;
   }
   
   .sidebar .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+
   }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
+
+
+ 
   
   .openbtn:hover {
     background-color: #444;
+  }
+
+  #cookie{
+    margin-left: 40%;
+    width: 40%;
+
+
+  }
+
+  #bod{
+    margin-left: 50%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: xx-large;
   }

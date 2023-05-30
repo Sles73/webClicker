@@ -33,7 +33,7 @@ body{
     transition: 0.5s;
 }
 
-#topbar p{
+#topbar h1{
     color: #f1f1f1;
     margin-left: calc(20% + 250px);
     font-size: xx-large;
@@ -75,21 +75,11 @@ body{
   }
 
 
- 
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-
-  #cookie{
-    margin-left: 40%;
-    width: 40%;
-
-
-  }
-
   #bod{
     margin-left: 50%;
     font-family: 'Press Start 2P', cursive;
     font-size: xx-large;
   }
+
+
+

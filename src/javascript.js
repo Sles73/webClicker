@@ -6,7 +6,14 @@ if(parseInt(parseInt(getCookie("bod"))) > 0){
     document.getElementById("bod").innerHTML = body;
 }
 
-
+slides = false;
+function slide(){
+  slides = !slides;
+  console.log(slides);
+  if(slides){
+    document.getElementById("slid").style.height = "300px";
+  }
+}
 
 console.log(body);
 

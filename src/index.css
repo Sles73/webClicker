@@ -43,6 +43,7 @@ header nav + div{
     background-color: #6A0136;
     height: 10px;
     margin: 0;
+    transition: 0.5s;
     
   }
 
@@ -56,8 +57,12 @@ body{
 h1 img{
     width: 30px;
 }
+#slik{
+ user-select: none;
+ cursor: pointer;
+}
 
-a {
+a, #slik {
     text-decoration: none;
     background-image: linear-gradient(
         to right,
@@ -68,14 +73,14 @@ a {
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
-    padding: 5px 0;
+    margin: 1%;
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
     }
 
-a:before{
+a:before, #slik:before{
     content: '';
     background: #6A0136;
     display: block;
@@ -87,13 +92,18 @@ a:before{
     transition: all 0.3s ease-in-out;
     }
 
-a:hover {
+a:hover, #slik:hover {
     background-position: 0;
     }
 
-a:hover::before{
+a:hover::before, #slik:hover::before{
     width: 100%;
     }
+
+img{
+    /*height: 250px;
+    margin-top: 25px;*/
+}
 
 section{
     background-color: #012A36;

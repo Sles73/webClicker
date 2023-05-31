@@ -100,9 +100,12 @@ a:hover::before, #slik:hover::before{
     width: 100%;
     }
 
-img{
-    /*height: 250px;
-    margin-top: 25px;*/
+#slideshow{
+    height: 550px;
+    margin-top: 25px;
+    visibility: hidden;
+    
+    /*display: none;*/
 }
 
 section{

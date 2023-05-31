@@ -1,19 +1,42 @@
 let body = 0;
 console.log(getCookie("bod"));
 
+
+
 if(parseInt(parseInt(getCookie("bod"))) > 0){
     body = parseInt(getCookie("bod"));
     document.getElementById("bod").innerHTML = body;
 }
 
 slides = false;
+
+let pistures = ["../img/confused.jpeg","../img/jidlo.jpeg","../img/koule.jpeg","../img/sad.jpeg","../img/znacka.jpeg"];
+let i = 0;
+
+
+function slideshow(){
+  i = (i+1)%5;
+  console.log("i = " + i);
+  console.log(pistures[i]);
+  document.getElementById("slideshow").src = pistures[i];
+  if(slides){
+    setTimeout(() => { slideshow();},2000);
+  }
+}
+
 function slide(){
   slides = !slides;
   console.log(slides);
   if(slides){
-    document.getElementById("slid").style.height = "300px";
+    document.getElementById("slid").style.height = "600px";
+    setTimeout(() => { document.getElementById("slideshow").style.visibility = "visible";},500);
+  }else{
+    document.getElementById("slid").style.height = "10px";
+    document.getElementById("slideshow").style.visibility = "hidden";
   }
 }
+
+
 
 console.log(body);
 

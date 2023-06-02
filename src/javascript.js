@@ -51,7 +51,7 @@ let nav = false;
   }
 
 
-function setup(){
+function setupp(){
   const currentDate = new Date();
   const day = currentDate.getDate();
   const month = currentDate.getMonth() + 1;  // Add 1 because months are zero-based (0-11)

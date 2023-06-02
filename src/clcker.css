@@ -1,4 +1,48 @@
 section {
     display: grid;
     grid-template-columns: 40% 40% 60%;
+    margin: 0;
   }
+
+  #nakup{
+    background-color: #012A36;
+    margin: 0;
+    width: 80%;
+    margin-top: 150px;
+    height: fit-content;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .nakup:hover{
+    background-color: #013646;
+  }
+
+  #cookie{
+    margin-top: 100px;
+    width: 80%;
+  }
+
+  #nakup > div{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: #014157 solid ;
+
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    color: #f1f1f1;
+    font-size: xx-large
+  }
+.count{
+  margin-top: 40%;
+}
+#nakup img{
+  margin-top: 15px;
+  height: 150px;
+}
+
+.cost{
+  margin-top: 40%;
+  color: #FFB20F;
+}
+

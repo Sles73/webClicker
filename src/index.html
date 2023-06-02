@@ -29,7 +29,7 @@
 
 <body>
     <header >
-        <h1 style="margin-bottom: 0;">Klikátk<img src="../img/cookieR1.png"> na sušenky</h1>
+        <h1 style="margin-bottom: 0;">Klikátk<img src="../img/cookieR1.png" alt="cookie"> na sušenky</h1>
         <div></div>
         <nav>
             <ul>
@@ -40,22 +40,24 @@
         </nav>
 
         <div id="slid">
-            <img src="" alt="Slideshow" id="slideshow">
+            <img src="../img/jidlo.jpeg" alt="Slideshow" id="slideshow">
         </div>
     </header>
     
     <section>
+
         <h2>O PROJEKTU</h2>
-        <article><p>Projekt "Cookie Clicker" je webová aplikace vyvinutá jako součást školního předmětu Vývoj webových aplikací. Jedná se o jednoduchou hru, ve které hráč kliká na obrázek sušenky (cookie) s cílem získat co nejvíce bodů.</p>
+        <div>
+        <p>Projekt "Cookie Clicker" je webová aplikace vyvinutá jako součást školního předmětu Vývoj webových aplikací. Jedná se o jednoduchou hru, ve které hráč kliká na obrázek sušenky (cookie) s cílem získat co nejvíce bodů.</p>
 
             <p>Aplikace je implementována pomocí HTML, CSS a JavaScript, což jsou základní technologie pro vývoj webových stránek a aplikací. Vzhled aplikace je upraven pomocí CSS stylopisů, aby vytvořil atraktivní vizuální dojem pro uživatele.</p>
             
             <p>Tato webová aplikace slouží jako praktická ukázka Alešových schopností v oblasti vývoje webových aplikací. Při vytváření projektu jsem si procvičil práci s HTML, CSS a JavaScriptem.</p>
             
             <p>Projekt Cookie Clicker demonstruje Alešovu schopnost přemýšlet analyticky, řešit problémy a vytvářet kód, který je efektivní a funkční. Jeho práce na tomto projektu zobrazuje jeho kreativitu a motivaci pro další rozvoj v oblasti webového vývoje.</p>
-        </article>
+        </div>
         
-        <div>
+        <div id="seznam">
             <dl>
                 <dt>HTML</dt>
                 <dd>- Svědomitě vytvořil Aleš</dd>
@@ -73,8 +75,11 @@
     <div></div>
     <footer>
         <p>Vytvořila tvůrčí skupina Aleny Poledňákové a Vladimíra Tišnovského.</p>
-        <p>Aleš Franče 2023&#174;</p>
+        <p>Aleš Franče production2023&#174;</p>
+        <p id="date"></p>
     </footer>
+
+    <script>setup()</script>
 
 </body>
 </html>

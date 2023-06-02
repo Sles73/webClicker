@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <script src="javascript.js"></script>
-    <script src="game.js"></script>
+    <script src="game.js">
+        
+    </script>
 
     <title>Clicker</title>
 </head>
@@ -38,17 +40,34 @@
     </header>
 
     <section  class="clicker">
-        <div></div>
+        <div>
+            <div id="nakup">
+                <div onclick="cursor(1)" class="nakup">
+                    <img src="../img/cursor.png" alt="">
+                    <div id="cursors" class="count"></div>
+                    <div id="cost_1" class="cost">15</div>
+                </div>
+                <div onclick="cursor(2)" class="nakup">
+                    <img src="../img/granny.png" alt="">
+                    <div id="granny" class="count"></div>
+                    <div id="cost_2" class="cost">200</div>
+                </div>
+                <div>
+                    <button onclick="reset()">reset</button>
+                </div>
+
+            </div>
+        </div>
 
         <div>
-            <span id="bod"></span>
-            <br>
             <img src="../img/cookieR2.png" onmouseover="this.src='../img/cookieR1.png'" onmouseup="this.src='../img/cookieR1.png'" onmouseout="this.src='../img/cookieR2.png'" onmousedown="this.src='../img/cookieR2.png'" alt="cookie" id="cookie" onclick="hh()">
         </div>
-        
-        <div></div>
-    </section>
 
+        <div>
+            <p id="bod"></p>
+        </div>
+    </section>
+<script>setup()</script>
     
 </body>
 </html>

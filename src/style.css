@@ -5,6 +5,8 @@ mobile chage widt is 510px
 body{
     background-color: #FAE1DF;
     font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
 }
 
 #menu{
@@ -15,8 +17,6 @@ body{
     text-align: center;
     padding: 10px;
     width: min-content;
-    margin-left: -10px;
-    margin-top: -10px;
     font-size: 50px;
 
 }
@@ -76,7 +76,6 @@ body{
 
 
   #bod{
-    margin-left: 50%;
     font-family: 'Press Start 2P', cursive;
     font-size: xx-large;
   }
